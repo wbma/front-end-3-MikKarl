@@ -1,13 +1,3 @@
-<div *ngFor="let stop of stopArray">
-  {{route.name}}
-  <ul>
-    <li *ngFor="let route of stop.patterns">
-      {{route.name}}
-    </li>
-  </ul>
-</div>
-
-
 <p>
   {{ printThis }}
 </p>
@@ -19,3 +9,12 @@
     <p>{{Description}}</p>
   </li>
 </ul>
+
+<div *ngFor="let stop of stopArray">
+  {{route.name}}
+  <ul>
+    <li *ngFor="let route of stop.patterns">
+      {{route.name}}
+    </li>
+  </ul>
+</div>
